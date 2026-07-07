@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EsnafKasa uygulaması gizlilik politikası">
+  <title>Gizlilik Politikası — EsnafKasa</title>
+  <style>
+    :root {
+      --primary: #2563eb;
+      --text: #1e293b;
+      --text-secondary: #64748b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --accent: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #fff;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .header p {
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+
+    .meta {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    .meta strong {
+      color: var(--text);
+    }
+
+    nav {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    nav h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    nav ol {
+      padding-left: 1.25rem;
+    }
+
+    nav li {
+      margin-bottom: 0.35rem;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    section h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border);
+    }
+
+    section h3 {
+      font-size: 1rem;
+      margin: 1rem 0 0.5rem;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 0.75rem 1.25rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0.75rem 0;
+      font-size: 0.9rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      margin-left: 0.25rem;
+    }
+
+    .highlight {
+      background: #f0fdf4;
+      border-left: 4px solid var(--accent);
+      padding: 0.75rem 1rem;
+      border-radius: 0 8px 8px 0;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    @media (max-width: 480px) {
+      .header h1 { font-size: 1.4rem; }
+      section { padding: 1.15rem; }
+      table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <h1>🏪 EsnafKasa Gizlilik Politikası</h1>
+    <p>Küçük işletmeler için gelir/gider ve veresiye takip uygulaması</p>
+  </header>
+
+  <div class="container">
+
+    <div class="meta">
+      <p><strong>Son güncelleme:</strong> 7 Temmuz 2026</p>
+      <p><strong>Yürürlük tarihi:</strong> 7 Temmuz 2026</p>
+      <p><strong>Uygulama:</strong> EsnafKasa (iOS &amp; Android)</p>
+      <p><strong>Paket adı:</strong> com.un1qc0d3.esnafkasa</p>
+    </div>
+
+    <nav>
+      <h2>İçindekiler</h2>
+      <ol>
+        <li><a href="#giris">Giriş</a></li>
+        <li><a href="#sorumlu">Veri Sorumlusu</a></li>
+        <li><a href="#toplanan">Toplanan ve İşlenen Veriler</a></li>
+        <li><a href="#saklama">Verilerin Saklanması</a></li>
+        <li><a href="#yedekleme">Yedekleme ve Dışa Aktarma</a></li>
+        <li><a href="#izinler">Cihaz İzinleri</a></li>
+        <li><a href="#reklamlar">Reklamlar</a></li>
+        <li><a href="#satin-alma">Uygulama İçi Satın Alma</a></li>
+        <li><a href="#ucuncu-taraf">Üçüncü Taraf Hizmetler</a></li>
+        <li><a href="#paylasim">Verilerin Paylaşılması</a></li>
+        <li><a href="#guvenlik">Veri Güvenliği</a></li>
+        <li><a href="#cocuklar">Çocukların Gizliliği</a></li>
+        <li><a href="#kvkk">KVKK Kapsamındaki Haklarınız</a></li>
+        <li><a href="#degisiklikler">Politika Değişiklikleri</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ol>
+    </nav>
+
+    <section id="giris">
+      <h2>1. Giriş</h2>
+      <p>
+        EsnafKasa ("Uygulama", "biz", "bizim"), küçük esnaf ve işletmelerin günlük gelir/gider
+        kayıtlarını ve veresiye takibini kolaylaştırmak amacıyla geliştirilmiş bir mobil uygulamadır.
+      </p>
+      <p>
+        Bu Gizlilik Politikası; Uygulamayı kullandığınızda hangi verilerin toplandığını, nasıl
+        saklandığını, hangi durumlarda paylaşıldığını ve haklarınızı açıklar.
+      </p>
+      <div class="highlight">
+        <strong>Özet:</strong> EsnafKasa, finansal kayıtlarınızı varsayılan olarak yalnızca
+        <strong>cihazınızda</strong> saklar. Sunucularımıza otomatik veri gönderimi yapılmaz.
+        Yedekleme, Excel dışa aktarma ve WhatsApp hatırlatma gibi işlemler tamamen sizin
+        kontrolünüzdedir.
+      </div>
+      <p>
+        Uygulamayı kullanarak bu politikayı okuduğunuzu ve kabul ettiğinizi beyan etmiş olursunuz.
+      </p>
+    </section>
+
+    <section id="sorumlu">
+      <h2>2. Veri Sorumlusu</h2>
+      <p>
+        6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu:
+      </p>
+      <ul>
+        <li><strong>Geliştirici:</strong> Un1qC0D3</li>
+        <li><strong>Uygulama:</strong> EsnafKasa</li>
+        <li><strong>İletişim:</strong> <a href="mailto:destek@esnafkasa.app">destek@esnafkasa.app</a></li>
+      </ul>
+      <p>
+        Gizlilik ile ilgili sorularınız için yukarıdaki e-posta adresinden bize ulaşabilirsiniz.
+      </p>
+    </section>
+
+    <section id="toplanan">
+      <h2>3. Toplanan ve İşlenen Veriler</h2>
+      <p>
+        EsnafKasa, aşağıdaki verileri <strong>sizin girdiğiniz veya izin verdiğiniz</strong>
+        kapsamda işler:
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Veri Türü</th>
+            <th>Örnekler</th>
+            <th>Amaç</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Finansal kayıtlar</strong></td>
+            <td>Gelir/gider tutarları, notlar, kategoriler, tarihler</td>
+            <td>Kasa takibi ve özet raporları</td>
+          </tr>
+          <tr>
+            <td><strong>Veresiye kayıtları</strong></td>
+            <td>Kişi adı, telefon numarası, borç tutarı, ödeme durumu</td>
+            <td>Veresiye defteri yönetimi</td>
+          </tr>
+          <tr>
+            <td><strong>İşletme bilgileri</strong></td>
+            <td>İşletme adı, adres, telefon (isteğe bağlı)</td>
+            <td>Kişiselleştirme</td>
+          </tr>
+          <tr>
+            <td><strong>Uygulama ayarları</strong></td>
+            <td>Tema tercihi, bildirim ayarları, özel kategoriler</td>
+            <td>Kullanıcı deneyimi</td>
+          </tr>
+          <tr>
+            <td><strong>Pro durumu</strong></td>
+            <td>Pro sürüm aktif/pasif bilgisi</td>
+            <td>Özellik erişim kontrolü</td>
+          </tr>
+          <tr>
+            <td><strong>Rehber verisi</strong> <span class="badge">İzin gerekli</span></td>
+            <td>Seçtiğiniz kişinin adı ve telefonu</td>
+            <td>Veresiye kaydına kişi eklemek (yalnızca siz seçtiğinizde)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Toplamadığımız veriler</h3>
+      <ul>
+        <li>Konum bilgisi</li>
+        <li>Kamera veya mikrofon kayıtları</li>
+        <li>Rehberinizin tamamı (yalnızca seçtiğiniz tek kişi okunur)</li>
+        <li>Banka hesabı veya kredi kartı bilgileri</li>
+        <li>Hesap oluşturma / giriş bilgileri (Uygulama hesap sistemi kullanmaz)</li>
+      </ul>
+    </section>
+
+    <section id="saklama">
+      <h2>4. Verilerin Saklanması</h2>
+      <p>
+        Tüm finansal kayıtlar, veresiye verileri ve ayarlarınız <strong>cihazınızda yerel olarak</strong>
+        saklanır (AsyncStorage teknolojisi ile). Bu veriler EsnafKasa sunucularına otomatik olarak
+        aktarılmaz veya bulutta yedeklenmez.
+      </p>
+      <div class="highlight">
+        Cihazınızı kaybetmeniz, uygulamayı silmeniz veya "Tüm Verileri Sıfırla" seçeneğini
+        kullanmanız durumunda yerel veriler kalıcı olarak silinebilir. Düzenli yedek almanızı
+        öneririz.
+      </div>
+      <p>
+        Veriler, siz silene veya uygulamayı kaldırana kadar cihazınızda kalır.
+      </p>
+    </section>
+
+    <section id="yedekleme">
+      <h2>5. Yedekleme ve Dışa Aktarma</h2>
+      <p>
+        EsnafKasa, verilerinizi dışa aktarmanız için aşağıdaki araçları sunar.
+        Bu işlemler <strong>tamamen sizin inisiyatifinizdedir</strong>; aktarılan verilerin
+        nereye gideceğinden ve kimlerle paylaşılacağından siz sorumlusunuz.
+      </p>
+
+      <h3>5.1 JSON Yedekleme</h3>
+      <ul>
+        <li>Ayarlar → "Yedek Oluştur" ile tüm verileriniz JSON formatında oluşturulur.</li>
+        <li>Paylaşım menüsü (Share) aracılığıyla e-posta, mesaj, bulut depolama vb. uygulamalara gönderebilirsiniz.</li>
+        <li>"Yedekten Geri Yükle" ile panodaki JSON verisini içe aktarabilirsiniz.</li>
+      </ul>
+      <p>
+        Yedek dosyası; işlemler, veresiye kayıtları ve ayarlarınızı içerir. Bu dosyayı güvenli
+        bir yerde saklamanız ve yetkisiz kişilerle paylaşmamanız önemlidir.
+      </p>
+
+      <h3>5.2 Excel Dışa Aktarma <span class="badge">Pro</span></h3>
+      <ul>
+        <li>Pro sürümde işlem ve veresiye verilerinizi .xlsx dosyası olarak dışa aktarabilirsiniz.</li>
+        <li>Oluşturulan dosya cihazınızda kaydedilir ve paylaşım menüsü ile gönderilebilir.</li>
+      </ul>
+
+      <h3>5.3 WhatsApp Hatırlatma</h3>
+      <ul>
+        <li>Veresiye hatırlatması göndermek için WhatsApp uygulaması açılır.</li>
+        <li>Önceden doldurulmuş mesaj metni WhatsApp'a iletilir; mesajı göndermek size bağlıdır.</li>
+        <li>Bu işlem sırasında veriler EsnafKasa sunucularına gönderilmez.</li>
+      </ul>
+    </section>
+
+    <section id="izinler">
+      <h2>6. Cihaz İzinleri</h2>
+      <p>Uygulama, aşağıdaki izinleri yalnızca ilgili özellik kullanıldığında talep eder:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>İzin</th>
+            <th>Platform</th>
+            <th>Amaç</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rehber / Kişiler</td>
+            <td>iOS, Android</td>
+            <td>Veresiye kaydına rehberden kişi seçmek (yalnızca seçilen kişi)</td>
+          </tr>
+          <tr>
+            <td>Bildirimler</td>
+            <td>iOS, Android</td>
+            <td>Günlük kasa hatırlatması ve veresiye hatırlatmaları (açıksanız)</td>
+          </tr>
+          <tr>
+            <td>İnternet</td>
+            <td>iOS, Android</td>
+            <td>Reklam gösterimi, uygulama içi satın alma doğrulama</td>
+          </tr>
+          <tr>
+            <td>Depolama / Dosya</td>
+            <td>Android</td>
+            <td>Excel dosyası oluşturma ve paylaşma</td>
+          </tr>
+          <tr>
+            <td>Panoya erişim</td>
+            <td>iOS, Android</td>
+            <td>Yedekten geri yükleme (panodaki JSON verisini okuma)</td>
+          </tr>
+          <tr>
+            <td>Titreşim</td>
+            <td>iOS, Android</td>
+            <td>Dokunsal geri bildirim (haptic feedback)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        İzinleri istediğiniz zaman cihaz ayarlarından kapatabilirsiniz. Bazı özellikler
+        (rehberden kişi seçme, bildirimler vb.) izin verilmezse çalışmayabilir.
+      </p>
+    </section>
+
+    <section id="reklamlar">
+      <h2>7. Reklamlar</h2>
+      <p>
+        EsnafKasa'nın <strong>ücretsiz sürümünde</strong> reklam gösterimi planlanmaktadır
+        (Google AdMob veya benzeri bir reklam ağı üzerinden).
+      </p>
+
+      <h3>7.1 Reklam verileri</h3>
+      <p>Reklam ağları aşağıdaki türde verileri toplayabilir:</p>
+      <ul>
+        <li>Reklam tanımlayıcısı (Advertising ID / IDFA)</li>
+        <li>Cihaz modeli ve işletim sistemi sürümü</li>
+        <li>IP adresi (yaklaşık konum çıkarımı için)</li>
+        <li>Uygulama kullanım istatistikleri (reklam gösterimi, tıklama)</li>
+        <li>Reklam etkileşim verileri</li>
+      </ul>
+      <p>
+        Bu verilerin toplanması ve işlenmesi, ilgili reklam ağının (ör. Google) gizlilik
+        politikasına tabidir:
+      </p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a></li>
+        <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Reklam Teknolojileri</a></li>
+      </ul>
+
+      <h3>7.2 Reklamsız kullanım</h3>
+      <p>
+        <strong>Pro sürüm</strong> satın alan kullanıcılara reklam gösterilmez. Pro durumu
+        cihazınızda yerel olarak saklanır ve mağaza (App Store / Google Play) üzerinden doğrulanır.
+      </p>
+
+      <h3>7.3 Reklam kişiselleştirmesi</h3>
+      <p>
+        Cihaz ayarlarınızdan reklam kişiselleştirmesini kapatabilirsiniz:
+      </p>
+      <ul>
+        <li><strong>iOS:</strong> Ayarlar → Gizlilik → Apple Reklamcılığı → Kişiselleştirilmiş Reklamlar</li>
+        <li><strong>Android:</strong> Ayarlar → Google → Reklamlar → Reklam kişiselleştirmesini devre dışı bırak</li>
+      </ul>
+    </section>
+
+    <section id="satin-alma">
+      <h2>8. Uygulama İçi Satın Alma (Pro)</h2>
+      <p>
+        EsnafKasa Pro, tek seferlik uygulama içi satın alma ile sunulur. Ödeme işlemleri
+        <strong>Apple App Store</strong> veya <strong>Google Play Store</strong> tarafından
+        gerçekleştirilir; kredi kartı veya banka bilgileriniz EsnafKasa tarafından
+        toplanmaz veya saklanmaz.
+      </p>
+      <ul>
+        <li>Satın alma doğrulaması ilgili mağaza altyapısı üzerinden yapılır.</li>
+        <li>Pro durumu cihazınızda yerel olarak saklanır.</li>
+        <li>"Satın Alımı Geri Yükle" özelliği mağaza kayıtlarınızı sorgular.</li>
+      </ul>
+      <p>Mağaza gizlilik politikaları:</p>
+      <ul>
+        <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple Gizlilik Politikası</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a></li>
+      </ul>
+    </section>
+
+    <section id="ucuncu-taraf">
+      <h2>9. Üçüncü Taraf Hizmetler</h2>
+      <p>Uygulama aşağıdaki üçüncü taraf hizmetleri kullanabilir:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Hizmet</th>
+            <th>Sağlayıcı</th>
+            <th>Amaç</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google AdMob</td>
+            <td>Google LLC</td>
+            <td>Ücretsiz sürümde reklam gösterimi</td>
+          </tr>
+          <tr>
+            <td>App Store / Google Play</td>
+            <td>Apple / Google</td>
+            <td>Pro sürüm satın alma ve geri yükleme</td>
+          </tr>
+          <tr>
+            <td>WhatsApp</td>
+            <td>Meta Platforms</td>
+            <td>Veresiye hatırlatma mesajı (harici uygulama)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Bu hizmetlerin veri işleme uygulamaları kendi gizlilik politikalarına tabidir.
+        EsnafKasa, bu hizmetler aracılığıyla toplanan veriler üzerinde doğrudan kontrol sahibi değildir.
+      </p>
+    </section>
+
+    <section id="paylasim">
+      <h2>10. Verilerin Paylaşılması</h2>
+      <p>EsnafKasa, kişisel verilerinizi <strong>satmaz</strong> ve <strong>kiralamaz</strong>.</p>
+      <p>Verileriniz yalnızca şu durumlarda paylaşılabilir:</p>
+      <ul>
+        <li><strong>Sizin talebinizle:</strong> Yedek oluşturma, Excel dışa aktarma, WhatsApp paylaşımı</li>
+        <li><strong>Yasal zorunluluk:</strong> Mahkeme kararı veya yürürlükteki mevzuat gereği</li>
+        <li><strong>Reklam ağları:</strong> Ücretsiz sürümde reklam gösterimi kapsamında (Bölüm 7)</li>
+        <li><strong>Mağaza sağlayıcıları:</strong> Pro satın alma işlemleri kapsamında</li>
+      </ul>
+    </section>
+
+    <section id="guvenlik">
+      <h2>11. Veri Güvenliği</h2>
+      <p>
+        Verileriniz cihazınızın yerel depolama alanında tutulur ve işletim sistemi tarafından
+        sağlanan güvenlik önlemleriyle korunur. Ek olarak:
+      </p>
+      <ul>
+        <li>Veriler sunucularımıza aktarılmaz (bulut senkronizasyonu yoktur).</li>
+        <li>Uygulama hesap sistemi kullanmaz; şifre veya oturum bilgisi toplanmaz.</li>
+        <li>Yedek dosyalarınızı şifreli bulut depolama veya güvenli ortamlarda saklamanızı öneririz.</li>
+      </ul>
+      <p>
+        Hiçbir sistem %100 güvenli değildir. Cihazınızın ekran kilidi ve güncel işletim sistemi
+        kullanmanızı tavsiye ederiz.
+      </p>
+    </section>
+
+    <section id="cocuklar">
+      <h2>12. Çocukların Gizliliği</h2>
+      <p>
+        EsnafKasa, 13 yaşın altındaki çocuklara yönelik değildir ve bilerek 13 yaş altından
+        kişisel veri toplamaz. 13 yaş altı bir çocuğun veri sağladığını fark ederseniz
+        <a href="mailto:destek@esnafkasa.app">destek@esnafkasa.app</a> adresinden bize bildirin;
+        verileri silmek için gerekli adımları atarız.
+      </p>
+    </section>
+
+    <section id="kvkk">
+      <h2>13. KVKK Kapsamındaki Haklarınız</h2>
+      <p>
+        6698 sayılı Kişisel Verilerin Korunması Kanunu'nun 11. maddesi uyarınca aşağıdaki
+        haklara sahipsiniz:
+      </p>
+      <ol>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+        <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+        <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+        <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+        <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+        <li>KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde silinmesini isteme</li>
+        <li>Düzeltme ve silme işlemlerinin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+        <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+        <li>Kanuna aykırı işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+      </ol>
+
+      <h3>Haklarınızı nasıl kullanırsınız?</h3>
+      <ul>
+        <li><strong>Verileri silme:</strong> Ayarlar → "Tüm Verileri Sıfırla" veya uygulamayı kaldırma</li>
+        <li><strong>Verileri dışa aktarma:</strong> Ayarlar → "Yedek Oluştur"</li>
+        <li><strong>Başvuru:</strong> <a href="mailto:destek@esnafkasa.app">destek@esnafkasa.app</a> adresine yazılı başvuru</li>
+      </ul>
+      <p>
+        Başvurularınız en geç 30 gün içinde sonuçlandırılır.
+      </p>
+    </section>
+
+    <section id="degisiklikler">
+      <h2>14. Politika Değişiklikleri</h2>
+      <p>
+        Bu Gizlilik Politikası zaman zaman güncellenebilir. Önemli değişikliklerde uygulama
+        içi bildirim veya mağaza güncelleme notlarıyla bilgilendirme yapılabilir.
+        Güncel politika her zaman bu sayfada yayımlanır.
+      </p>
+      <p>
+        Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz, güncellenmiş politikayı
+        kabul ettiğiniz anlamına gelir.
+      </p>
+    </section>
+
+    <section id="iletisim">
+      <h2>15. İletişim</h2>
+      <p>Gizlilik politikası veya verileriniz hakkında sorularınız için:</p>
+      <ul>
+        <li><strong>E-posta:</strong> <a href="mailto:destek@esnafkasa.app">destek@esnafkasa.app</a></li>
+        <li><strong>Uygulama:</strong> EsnafKasa → Ayarlar → Geri Bildirim</li>
+        <li><strong>Geliştirici:</strong> Un1qC0D3</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 EsnafKasa — Un1qC0D3. Tüm hakları saklıdır.</p>
+    <p>Son güncelleme: 7 Temmuz 2026</p>
+  </footer>
+
+</body>
+</html>
